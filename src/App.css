@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f48fb1, #6a1b9a);
+}
+
+.app {
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    color: #eee;
+}
+
+.result {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px 10px 0 0;
+    width: 320px;
+    height: 140px;
+    padding: 20px;
+    text-align: right;
+    position: relative;
+}
+
+.result .history {
+    font-size: 17px;
+    opacity: 0.7;
+}
+
+.result .output {
+    font-size: 32px;
+    margin-top: 20px;
+}
+
+.keyboard {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 10px 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+.keyboard div.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 65px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, transform 0.3s;
+}
+
+.keyboard div.btn:hover {
+    background: rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+.keyboard div.btn#clear {
+    grid-column: 1 / span 2;
+}
+
